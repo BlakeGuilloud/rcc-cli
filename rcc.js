@@ -1,7 +1,7 @@
 const fs   = require('fs');
 const path = require('path');
 
-function createFile(clientPath, fileType, fileName) {
+function createFile(fileName, fileType, clientPath) {
   const filePath    = getFilePath(fileName, fileType, clientPath);
   var fileTemplate  = getTemplate(fileType);
 
@@ -28,8 +28,8 @@ function getFilePath(fileName, fileType, clientPath) {
 
 function getFileExtension(fileType) {
   switch (fileType) {
-    case 'component':
-    case 'container':
+    case 'components':
+    case 'containers':
       return 'jsx';
       break;
     default:

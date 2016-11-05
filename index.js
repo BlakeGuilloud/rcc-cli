@@ -4,18 +4,16 @@ const commander = require('commander');
 const rcc       = require('./rcc');
 
 commander.version('0.1.5');
-commander.command('create:component [value] [value]')
+commander.command('component [value] [value]')
   .description('creates a templated pure function react component')
-  .action((path, name) => {
-    console.log('path', path);
-    console.log('name', name);
-    rcc(path, 'component', name);
+  .action((name, path) => {
+    rcc(name, 'components', path);
   });
 
-commander.command('create:container [value] [value]')
+commander.command('container [value] [value]')
   .description('creates a react component with connect and dispatch mapping')
-  .action((path, name) => {
-    rcc(path, 'container', name);
+  .action((name, path) => {
+    rcc(name, 'containers', path);
   });
 
 commander.parse(process.argv);
