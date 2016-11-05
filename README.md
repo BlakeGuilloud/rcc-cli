@@ -1,7 +1,7 @@
 <h1> rcc-cli </h1>
 
 <h3> React Create Component</h3>
-Install with npm [npm](https://www.npmjs.com/package/rcc-cli) 
+Install with [npm](https://www.npmjs.com/package/rcc-cli) 
 
 ```
 npm install rcc-cli -g
