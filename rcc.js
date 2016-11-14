@@ -19,7 +19,7 @@ function getTemplate(fileType) {
 
 function getFilePath(fileName, fileType, clientPath) {
   return [
-    getFileDest(clientPath, fileType), [
+    getFileDest(clientPath), [
       fileName,
       getFileExtension(fileType),
     ].join('.'),
@@ -37,11 +37,10 @@ function getFileExtension(fileType) {
   }
 }
 
-function getFileDest(clientPath, fileType) {
+function getFileDest(clientPath) {
   const filePath = [
     process.cwd(),
     clientPath,
-    fileType,
   ].join('/');
 
   return path.normalize(filePath);
