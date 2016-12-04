@@ -30,6 +30,7 @@ function getFileExtension(fileType) {
   switch (fileType) {
     case 'components':
     case 'containers':
+    case 'pures':
       return 'jsx';
       break;
     default:
