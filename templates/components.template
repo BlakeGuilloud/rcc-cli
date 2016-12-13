@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const <#fileName> = (props) => {
-  return (
-    <div>
-      Hello from <#fileName>
-    </div>
-  );
-};
+export default class <#fileName> extends Component {
+  static displayName = '<#fileName>';
 
-<#fileName>.propTypes = {};
+  static propTypes = {}
 
-export default <#fileName>;
+  render() {
+    return (
+      <div>
+        Hello from <#fileName>
+      </div>
+    );
+  }
+}

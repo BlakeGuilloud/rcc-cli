@@ -9,14 +9,18 @@ npm install rcc-cli -g
 
 
 <h3> Commands: </h3>
+Create a templated React Component;
+```
+rcc component [componentName] [dirPath]
+```
 Create a pure function
 ```
-rcc component [componentName] [dirPath] 
+rcc pure [componentName] [dirPath]
 ```
 
 Create a React Component with connect and dispatch mapping
 ```
-rcc container [containerName] [dirPath] 
+rcc container [containerName] [dirPath]
 ```
 
 <h3> A very simple tool for building React applications quickly. </h3>
