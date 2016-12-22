@@ -5,6 +5,8 @@ export default class <#fileName> extends Component {
 
   static propTypes = {}
 
+  state = {};
+
   render() {
     return (
       <div>

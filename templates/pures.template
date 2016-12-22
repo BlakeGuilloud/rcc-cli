@@ -8,6 +8,8 @@ const <#fileName> = (props) => {
   );
 };
 
+<#fileName>.displayName = <#fileName>;
+
 <#fileName>.propTypes = {};
 
 export default <#fileName>;
