@@ -7,18 +7,22 @@ Install with [npm](https://www.npmjs.com/package/rcc-cli)
 npm install rcc-cli -g
 ```
 
-
 <h3> Commands: </h3>
-Create a templated React Component;
+
+Create a templated React Component
+
 ```
 rcc component [componentName] [dirPath]
 ```
+
 Create a templated React pure function
+
 ```
 rcc pure [componentName] [dirPath]
 ```
 
 Create a React Component with Connect mapping
+
 ```
 rcc container [containerName] [dirPath]
 ```
