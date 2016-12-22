@@ -1,6 +1,7 @@
 <h1> rcc-cli </h1>
 
 <h3> React Create Component</h3>
+
 Install with [npm](https://www.npmjs.com/package/rcc-cli)
 
 ```
@@ -25,6 +26,12 @@ Create a React Component with Connect mapping
 
 ```
 rcc container [containerName] [dirPath]
+```
+
+Example:
+
+```
+rcc container HeaderContainer src/containers
 ```
 
 <h3> A very simple tool for building React applications quickly. </h3>
