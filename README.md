@@ -13,12 +13,12 @@ Create a templated React Component;
 ```
 rcc component [componentName] [dirPath]
 ```
-Create a pure function
+Create a templated React pure function
 ```
 rcc pure [componentName] [dirPath]
 ```
 
-Create a React Component with connect and dispatch mapping
+Create a React Component with Connect mapping
 ```
 rcc container [containerName] [dirPath]
 ```
