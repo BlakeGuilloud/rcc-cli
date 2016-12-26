@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const commander = require('commander');
-const rcc       = require('./rcc');
+const rcc = require('./rcc');
 
 commander.version('0.1.5');
 commander.command('component [value] [value]')
@@ -11,13 +11,13 @@ commander.command('component [value] [value]')
   });
 
 commander.command('pure [value] [value]')
-  .description('creates a templated pure function')
+  .description('creates a templated React pure function')
   .action((name, path) => {
     rcc(name, 'pures', path);
   });
 
 commander.command('container [value] [value]')
-  .description('creates a react component with connect and dispatch mapping')
+  .description('creates a React component with connect mapping')
   .action((name, path) => {
     rcc(name, 'containers', path);
   });

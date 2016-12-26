@@ -1,9 +1,9 @@
-const fs   = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 function createFile(fileName, fileType, clientPath) {
-  const filePath    = getFilePath(fileName, fileType, clientPath);
-  var fileTemplate  = getTemplate(fileType);
+  const filePath = getFilePath(fileName, fileType, clientPath);
+  var fileTemplate = getTemplate(fileType);
 
   fileTemplate = replace(fileTemplate, '<#fileName>', fileName);
 

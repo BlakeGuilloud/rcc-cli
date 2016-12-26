@@ -1,10 +1,14 @@
-import React       from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 
 class <#fileName> extends React.Component {
+  static displayName = '<#fileName>';
 
   static propTypes = {};
+
+  state = {};
 
   render() {
     const props = {};
@@ -16,12 +20,16 @@ class <#fileName> extends React.Component {
 }
 
 function mapStateToProps(state) {
-  const {} = state;
-  return {};
+  const { example } = state;
+  return {
+    example: example.examples,
+  };
 }
 
 function mapDispatchToProps(dispatch) {
-  return {};
+  return {
+    example: bindActionCreators(ExampleActions.exampleFunction, dispatch),
+  };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(<#fileName>);

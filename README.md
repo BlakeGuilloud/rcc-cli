@@ -1,26 +1,37 @@
 <h1> rcc-cli </h1>
 
 <h3> React Create Component</h3>
+
 Install with [npm](https://www.npmjs.com/package/rcc-cli)
 
 ```
 npm install rcc-cli -g
 ```
 
-
 <h3> Commands: </h3>
-Create a templated React Component;
+
+Create a templated React Component
+
 ```
 rcc component [componentName] [dirPath]
 ```
-Create a pure function
+
+Create a templated React pure function
+
 ```
 rcc pure [componentName] [dirPath]
 ```
 
-Create a React Component with connect and dispatch mapping
+Create a React Component with Connect mapping
+
 ```
 rcc container [containerName] [dirPath]
+```
+
+Example:
+
+```
+rcc container HeaderContainer src/containers
 ```
 
 <h3> A very simple tool for building React applications quickly. </h3>
