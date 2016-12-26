@@ -22,13 +22,13 @@ class <#fileName> extends React.Component {
 function mapStateToProps(state) {
   const { example } = state;
   return {
-    example: example.examples,
+    // example: example.examples,
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    example: bindActionCreators(ExampleActions.exampleFunction, dispatch),
+    // example: bindActionCreators(ExampleActions.exampleFunction, dispatch),
   };
 }
 
