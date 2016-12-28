@@ -7,7 +7,7 @@ function createFile(fileName, fileType, clientPath) {
 
   fileTemplate = replace(fileTemplate, '<#fileName>', fileName);
 
-  fs.writeFileSync(filePath, fileTemplate);
+  return fs.writeFileSync(filePath, fileTemplate);
 }
 
 function getTemplate(fileType) {
@@ -51,4 +51,10 @@ function replace(string, find, fileName) {
   return string.split(find).join(fileName);
 }
 
-module.exports = createFile;
+module.exports = {
+  createFile,
+  getFileExtension,
+  getFileDest,
+  getTemplate,
+  getFilePath,
+};

@@ -4,7 +4,7 @@
   "description": "React Create Component CLI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "bin": {
     "rcc": "./index.js"
@@ -13,5 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.9.0"
-  }
+  },
+  "devDependencies": {
+    "jest": "^18.0.0"
+  },
+  "repository": "https://github.com/BlakeGuilloud/rcc-cli.git"
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const commander = require('commander');
-const rcc = require('./rcc');
+const rcc = require('./rcc').createFile;
 
 commander.version('0.1.5');
 commander.command('component [value] [value]')
