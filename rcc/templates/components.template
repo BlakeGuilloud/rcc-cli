@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 export default class <#fileName> extends Component {
-  static displayName = '<#fileName>';
-
-  static propTypes = {}
-
   state = {};
 
   render() {
@@ -15,3 +11,7 @@ export default class <#fileName> extends Component {
     );
   }
 }
+
+<#fileName>.displayName = '<#fileName';
+
+<#fileName>.propTypes = {};

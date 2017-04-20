@@ -1,13 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-
+// import { bindActionCreators } from 'redux';
 
 class <#fileName> extends React.Component {
-  static displayName = '<#fileName>';
-
-  static propTypes = {};
-
   state = {};
 
   render() {
@@ -18,6 +13,10 @@ class <#fileName> extends React.Component {
     );
   }
 }
+
+<#fileName>.displayName = '<#fileName>';
+
+<#fileName>.propTypes = {};
 
 function mapStateToProps(state) {
   const { example } = state;
