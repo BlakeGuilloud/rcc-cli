@@ -1,6 +1,8 @@
-<h1> rcc-cli </h1>
 [![Build Status](https://travis-ci.org/BlakeGuilloud/rcc-cli.svg?branch=master)](https://travis-ci.org/BlakeGuilloud/rcc-cli)
 [![NPM version](https://img.shields.io/npm/v/rcc-cli.svg)](https://www.npmjs.com/package/rcc-cli)
+
+<h1> rcc-cli </h1>
+
 <h3> React Create Component</h3>
 
 Install with [npm](https://www.npmjs.com/package/rcc-cli)
