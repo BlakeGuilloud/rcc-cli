@@ -18,25 +18,25 @@ $ yarn add rcc-cli --global
 Create a templated React Component
 
 ```
-rcc component [componentName] [dirPath]
+$ rcc component [componentName] [dirPath]
 ```
 
 Create a templated React pure function
 
 ```
-rcc pure [componentName] [dirPath]
+$ rcc pure [componentName] [dirPath]
 ```
 
 Create a React Component with Connect mapping
 
 ```
-rcc container [containerName] [dirPath]
+$ rcc container [containerName] [dirPath]
 ```
 
 Example:
 
 ```
-rcc container HeaderContainer src/containers
+$ rcc container HeaderContainer src/containers
 ```
 
 <h3> A very simple tool for building React applications quickly. </h3>
