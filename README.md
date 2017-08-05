@@ -8,9 +8,11 @@
 Install with [npm](https://www.npmjs.com/package/rcc-cli)
 
 ```
-npm install rcc-cli -g
+$ npm install rcc-cli -g
 ```
-
+```
+$ yarn add rcc-cli --global
+```
 <h3> Commands: </h3>
 
 Create a templated React Component
