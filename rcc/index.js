@@ -3,8 +3,9 @@ const path = require('path');
 
 function createFile(fileType, fileName, clientPath) {
   const filePath = getFilePath(fileType, fileName, clientPath);
-  const fileTemplate = replace(getTemplate(fileType), '<#fileName>', fileName);
-
+  let fileTemplate = getTemplate(fileType);
+  
+  fileTemplate = replace(fileTemplate, '<#fileName>', fileName);
   return fs.writeFileSync(filePath, fileTemplate);
 }
 

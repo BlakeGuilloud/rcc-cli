@@ -35,8 +35,8 @@ describe('getFilePath', () => {
   const getFilePath = rcc.getFilePath;
 
   it('should create a file path', () => {
-    expect(getFilePath('foo', 'component', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`)
-    expect(getFilePath('foo', 'container', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`)
-    expect(getFilePath('foo', 'pure', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`)
+    expect(getFilePath('component', 'foo', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`)
+    expect(getFilePath('container', 'foo', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`)
+    expect(getFilePath('pure', 'foo', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`)
   });
 });
