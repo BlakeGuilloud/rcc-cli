@@ -26,7 +26,7 @@ describe('getTemplate', () => {
 
   it('should retrieve the proper template', () => {
     expect(getTemplate('components')).toContain('state');
-    expect(getTemplate('containers')).toContain('dispatch');
+    expect(getTemplate('containers')).toContain('actions');
     expect(getTemplate('pures')).toContain('.propTypes');
   });
 });
