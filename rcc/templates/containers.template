@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 class <#fileName> extends React.Component {
   state = {};
@@ -19,17 +18,16 @@ class <#fileName> extends React.Component {
 
 <#fileName>.propTypes = {};
 
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   const { example } = state;
+
   return {
     example: example.examples,
   };
-}
+};
 
-function mapDispatchToProps(dispatch) {
-  return {
-    example: bindActionCreators(ExampleActions.exampleFunction, dispatch),
-  };
-}
+const actions = {
 
-export default connect(mapStateToProps, mapDispatchToProps)(<#fileName>);
+};
+
+export default connect(mapStateToProps, actions)(<#fileName>);
