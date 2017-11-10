@@ -17,4 +17,4 @@ class <#fileName> extends Component {
 
 <#fileName>.propTypes = {};
 
-export default <#fileName>
+export default <#fileName>;
