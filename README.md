@@ -7,35 +7,27 @@
 
 Install with [npm](https://www.npmjs.com/package/rcc-cli)
 
-```
+```bash
 $ npm install rcc-cli -g
 ```
-```
+```bash
 $ yarn add rcc-cli --global
 ```
-<h3> Commands: </h3>
 
-Create a templated React Component
+<h3> Usage: </h3>
+rcc accepts three arguments:
 
-```
-$ rcc component [componentName] [dirPath]
-```
+- type : the type of component to be created. [pure, component, container]
+- name : the name of the component you wish to create.
+- path : the path from your cwd() to inject the file.
 
-Create a templated React pure function
+<h3> Examples: </h3>
 
-```
-$ rcc pure [componentName] [dirPath]
-```
-
-Create a React Component with Connect mapping
-
-```
-$ rcc container [containerName] [dirPath]
+```bash
+$ rcc pure Header src/components
 ```
 
-Example:
-
-```
+```bash
 $ rcc container HeaderContainer src/containers
 ```
 
