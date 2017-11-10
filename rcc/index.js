@@ -1,11 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-function createFile(fileName, fileType, clientPath) {
-  const filePath = getFilePath(fileName, fileType, clientPath);
-  var fileTemplate = getTemplate(fileType);
-
-  fileTemplate = replace(fileTemplate, '<#fileName>', fileName);
+function createFile(fileType, fileName, clientPath) {
+  const filePath = getFilePath(fileType, fileName, clientPath);
+  const fileTemplate = replace(getTemplate(fileType), '<#fileName>', fileName);
 
   return fs.writeFileSync(filePath, fileTemplate);
 }
@@ -17,8 +15,8 @@ function getTemplate(fileType) {
   ].join('/'))).toString();
 }
 
-function getFilePath(fileName, fileType, clientPath) {
-  return [
+function getFilePath(fileType, fileName, clientPath) {
+  return [  
     getFileDest(clientPath), [
       fileName,
       getFileExtension(fileType),
@@ -28,9 +26,9 @@ function getFilePath(fileName, fileType, clientPath) {
 
 function getFileExtension(fileType) {
   switch (fileType) {
-    case 'components':
-    case 'containers':
-    case 'pures':
+    case 'component':
+    case 'container':
+    case 'pure':
       return 'jsx';
       break;
     default:
