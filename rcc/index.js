@@ -4,8 +4,10 @@ const path = require('path');
 function createFile(fileType, fileName, clientPath) {
   const filePath = getFilePath(fileType, fileName, clientPath);
   let fileTemplate = getTemplate(fileType);
+  console.log('before', fileTemplate);
   
   fileTemplate = replace(fileTemplate, '<#fileName>', fileName);
+  console.log('after', fileTemplate);
   return fs.writeFileSync(filePath, fileTemplate);
 }
 
