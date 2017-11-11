@@ -11,7 +11,7 @@ Install with [npm](https://www.npmjs.com/package/rcc-cli)
 $ npm install rcc-cli -g
 ```
 ```bash
-$ yarn add rcc-cli --global
+$ yarn global add rcc-cli
 ```
 
 <h3> Usage: </h3>
