@@ -4,7 +4,8 @@
   "description": "React Create Component CLI",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "bin": {
     "rcc": "./index.js"
@@ -15,6 +16,7 @@
     "commander": "^2.9.0"
   },
   "devDependencies": {
+    "eslint-config-blake": "^1.0.8",
     "jest": "^18.0.0"
   },
   "repository": "https://github.com/BlakeGuilloud/rcc-cli.git"

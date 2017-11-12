@@ -11,16 +11,16 @@ function createFile(fileType, fileName, clientPath) {
 function getTemplate(fileType) {
   return fs.readFileSync(path.normalize([
     __dirname,
-    `/templates/${fileType}.template`,
+    `/templates/${fileType}.template`
   ].join('/'))).toString();
 }
 
 function getFilePath(fileType, fileName, clientPath) {
-  return [  
+  return [
     getFileDest(clientPath), [
       fileName,
-      getFileExtension(fileType),
-    ].join('.'),
+      getFileExtension(fileType)
+    ].join('.')
   ].join('/');
 }
 
@@ -30,7 +30,6 @@ function getFileExtension(fileType) {
     case 'container':
     case 'pure':
       return 'jsx';
-      break;
     default:
       return 'js';
   }
@@ -39,7 +38,7 @@ function getFileExtension(fileType) {
 function getFileDest(clientPath) {
   const filePath = [
     process.cwd(),
-    clientPath,
+    clientPath
   ].join('/');
 
   return path.normalize(filePath);
