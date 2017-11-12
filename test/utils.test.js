@@ -1,8 +1,11 @@
-const rcc = require('../rcc');
+const {
+  getFileExtension,
+  getFileDest,
+  getTemplate,
+  getFilePath,
+} = require('../rcc/utils');
 
 describe('getFileExtension', () => {
-  const getFileExtension = rcc.getFileExtension;
-
   it('should map file extension', () => {
     expect(getFileExtension('component')).toBe('jsx');
     expect(getFileExtension('container')).toBe('jsx');
@@ -13,8 +16,6 @@ describe('getFileExtension', () => {
 });
 
 describe('getFileDest', () => {
-  const getFileDest = rcc.getFileDest;
-
   it('should map file destination', () => {
     expect(getFileDest('foo')).toBe(`${process.cwd()}/foo`);
     expect(getFileDest('bar')).toBe(`${process.cwd()}/bar`);
@@ -22,8 +23,6 @@ describe('getFileDest', () => {
 });
 
 describe('getTemplate', () => {
-  const getTemplate = rcc.getTemplate;
-
   it('should retrieve the proper template', () => {
     expect(getTemplate('component')).toContain('state');
     expect(getTemplate('container')).toContain('actions');
@@ -32,8 +31,6 @@ describe('getTemplate', () => {
 });
 
 describe('getFilePath', () => {
-  const getFilePath = rcc.getFilePath;
-
   it('should create a file path', () => {
     expect(getFilePath('component', 'foo', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`);
     expect(getFilePath('container', 'foo', 'bar')).toBe(`${process.cwd()}/bar/foo.jsx`);

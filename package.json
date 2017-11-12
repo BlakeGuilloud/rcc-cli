@@ -13,11 +13,13 @@
   "author": "Blake Guilloud",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.3.0",
     "commander": "^2.9.0"
   },
   "devDependencies": {
     "eslint-config-blake": "^1.0.8",
-    "jest": "^18.0.0"
+    "jest": "^18.0.0",
+    "rimraf": "^2.6.2"
   },
   "repository": "https://github.com/BlakeGuilloud/rcc-cli.git"
 }
