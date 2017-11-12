@@ -8,7 +8,8 @@ function getTemplate(fileType) {
   ].join('/'))).toString();
 }
 
-function getFilePath(fileType, fileName, clientPath) {
+function getFilePath(fileType, fileName, clientPath = '') {
+  console.log('client path', clientPath);
   return [
     getFileDest(clientPath), [
       fileName,
