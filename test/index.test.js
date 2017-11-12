@@ -23,7 +23,7 @@ describe('creating a new component', () => {
 });
 
 describe('create a new container', () => {
-  it('should still create a component if no callback argument was provided', () => {
+  it('should still create a container if no callback argument was provided', () => {
     createFile('container', 'BlueContainer', 'test/files');
   });
 
