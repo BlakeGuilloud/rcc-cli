@@ -11,7 +11,7 @@ const {
 // eslint-disable-next-line no-console
 const log = console.log;
 
-function createFile(fileType, fileName, clientPath, callback) {
+function createFile(fileType, fileName, clientPath, callback = () => {}) {
   const filePath = getFilePath(fileType, fileName, clientPath);
   const fileTemplate = replace(getTemplate(fileType), '<#fileName>', fileName);
 
