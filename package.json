@@ -1,6 +1,6 @@
 {
   "name": "rcc-cli",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "React Create Component CLI",
   "main": "index.js",
   "scripts": {
