@@ -11,7 +11,7 @@ const {
 // eslint-disable-next-line no-console
 const log = console.log;
 
-function createFile(fileType, fileName, clientPath, callback = () => {}) {
+function createFile(fileType, fileName, clientPath, callback) {
   const filePath = getFilePath(fileType, fileName, clientPath);
   const fileTemplate = replace(getTemplate(fileType), '<#fileName>', fileName);
 
@@ -22,7 +22,9 @@ function createFile(fileType, fileName, clientPath, callback = () => {}) {
       log(chalk.green(`New component written to ${filePath}`));
     }
 
-    callback(filePath);
+    if (typeof callback === 'function') {
+      callback(filePath);
+    }
   });
 }
 

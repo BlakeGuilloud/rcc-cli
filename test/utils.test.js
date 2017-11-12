@@ -19,6 +19,7 @@ describe('getFileDest', () => {
   it('should map file destination', () => {
     expect(getFileDest('foo')).toBe(`${process.cwd()}/foo`);
     expect(getFileDest('bar')).toBe(`${process.cwd()}/bar`);
+    expect(getFileDest()).toBe(`${process.cwd()}/`);
   });
 });
 

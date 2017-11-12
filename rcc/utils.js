@@ -8,7 +8,7 @@ function getTemplate(fileType) {
   ].join('/'))).toString();
 }
 
-function getFilePath(fileType, fileName, clientPath = process.cwd()) {
+function getFilePath(fileType, fileName, clientPath) {
   return [
     getFileDest(clientPath), [
       fileName,
