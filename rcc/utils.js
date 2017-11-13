@@ -33,6 +33,10 @@ function getFileExtension(fileType) {
 }
 
 function getFileDest(clientPath) {
+  if (!clientPath) {
+    return path.normalize(process.cwd());
+  }
+
   const filePath = [
     process.cwd(),
     clientPath
