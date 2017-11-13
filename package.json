@@ -11,7 +11,7 @@
     "rcc": "./index.js"
   },
   "author": "Blake Guilloud",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
     "commander": "^2.9.0"
