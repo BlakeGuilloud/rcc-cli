@@ -1,7 +1,7 @@
 const fs = require('fs');
 const rimraf = require('rimraf');
 
-const { createFile, } = require('../rcc');
+const { createFile } = require('../rcc');
 
 beforeEach(done =>
   fs.mkdir(`${process.cwd()}/test/files`, done));

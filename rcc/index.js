@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 const chalk = require('chalk');
 
 const {
@@ -9,7 +8,7 @@ const {
 } = require('./utils');
 
 // eslint-disable-next-line no-console
-const log = console.log;
+const { log } = console;
 
 function createFile(fileType, fileName, clientPath, callback) {
   const filePath = getFilePath(fileType, fileName, clientPath);
